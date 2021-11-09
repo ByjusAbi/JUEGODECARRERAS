@@ -3,17 +3,18 @@ class Form {
     this.input = createInput("Name");
     this.button = createButton('Play');
     this.saludo = createElement('h2');
+    this.title = createElement('h2')
   }
     hide(){
     this.input.hide();
     this.button.hide();
     this.saludo.hide();
+    this.title.hide();
 
     }
   display(){
-    var title = createElement('h2')
-    title.html("Juego De Carreras De Autos");
-    title.position(130, 0);
+    this.title.html("Juego De Carreras De Autos");
+    this.title.position(displayWidth/2-50, 0);
 
     this.input.position(displayWidth/2-40,displayHeight/2-80);
     this.button.position(displayWidth/2+30,displayHeight/2);

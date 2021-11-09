@@ -20,7 +20,9 @@ class Player {
     var playerIndex = "players/player" + this.index;
     database.ref(playerIndex).set({
       name: this.name,
-      distance: this.distancia
+      distancia: this.distancia
+      //modifique esta línea de codigo decia distance: this.distancia pero nuestra 
+      // variable en el constructor se llama distancia. 
     }); } 
     static infojugadores(){
       var datosjugadores = database.ref('players');

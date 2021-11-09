@@ -7,6 +7,7 @@ var database;
 
 var form, player, game;
 var jugadores;
+var distancia=0;
 var carro1, carro2,carro3,carro4;
 var carros;
 
@@ -25,7 +26,7 @@ function draw(){
       }
       if(gameState === 1){
         clear();
-        game.Play();
+        game.play();
       }
     
 }

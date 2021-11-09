@@ -30,7 +30,7 @@ class Game {
       carros = [carro1,carro2,carro3,carro4];
 
     } 
-      Play(){
+      play(){
         form.hide();
       
           Player.infojugadores();
